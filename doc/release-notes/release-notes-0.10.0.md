@@ -156,8 +156,8 @@ RPC Server "Warm-Up" Mode
 -------------------------
 
 The RPC server is started earlier now, before most of the expensive
-intialisations like loading the block index.  It is available now almost
-immediately after starting the process.  However, until all initialisations
+initializations like loading the block index.  It is available now almost
+immediately after starting the process.  However, until all initializations
 are done, it always returns an immediate error with code -28 to all calls.
 
 This new behaviour can be useful for clients to know that a server is already
